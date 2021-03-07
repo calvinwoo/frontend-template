@@ -14,10 +14,11 @@
   },
   "homepage": "https://github.com/calvinwoo/frontend-template#readme",
   "scripts": {
-    "lint": "prettier --check src && eslint --ext=ts,tsx src",
+    "lint": "prettier --check . && eslint --ext=js,ts,tsx .",
+    "lint-fix": "prettier --write . && eslint --ext=js,ts,tsx --fix .",
     "start": "tsc -w & webpack serve --mode development",
     "build": "webpack --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tsc && npm run lint"
   },
   "browserslist": [
     "last 3 safari versions",

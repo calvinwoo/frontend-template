@@ -1,18 +1,18 @@
 {
   "presets": [
-    [
-      "@babel/env",
-      { "useBuiltIns": "usage", "corejs": "3" }
-    ],
+    ["@babel/env", { "useBuiltIns": "usage", "corejs": "3" }],
     "@babel/preset-typescript",
     {
       "presets": [
-        ["@babel/preset-react", {
-          "runtime": "automatic",
-          "importSource": "@emotion/react"
-        }]
+        [
+          "@babel/preset-react",
+          {
+            "runtime": "automatic",
+            "importSource": "@emotion/react"
+          }
+        ]
       ]
-    },
+    }
   ],
   "plugins": ["@emotion"]
 }
